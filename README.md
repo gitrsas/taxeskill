@@ -39,7 +39,7 @@
 - [ ] **Eligibility Checker** — Determine if user qualifies for credits/deductions (EV credit, EITC, etc.)
 
 ### EV Credit Investigation
-- [ ] **2021 Ford F150 Lightning EV Credit** — Research eligibility for 2025 tax year (IRC 30D, IRC 30D)
+- [ ] **2021 Ford F150 Hyrbid EV Credit** — Research eligibility for 2025 tax year (IRC 30D, IRC 30D)
   - [ ] Check if F150 Lightning qualifies for $7,500 federal credit
   - [ ] Check if used in qualifying location (assembly in U.S.)
   - [ ] Check income limits and MSRP caps
