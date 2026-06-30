@@ -46,61 +46,33 @@
 ## 🔬 EV Credit Investigation: Used 2021 Ford F150 Lightning Platinum
 
 ### Summary
-**The 2021 Ford F150 Lightning (used, purchased October 2025) MAY qualify for the IRC 25E Used Clean Vehicle Credit ($4,000), but the USED vehicle sale price is the key factor.**
+**The 2021 Ford F150 Lightning (used, purchased October 2025) does NOT qualify for any federal EV credit.**
 
 ### Key Findings
 
-#### 1. Used Vehicle Credit (IRC 25E) Requirements
+#### 1. Used Vehicle Credit (IRC 25E) — NOT ELIGIBLE
 | Requirement | F150 Lightning Status |
 |------------|----------------------|
 | Vehicle model year ≥ 2 years old | ✅ Yes (2021 in 2025 = 4 years old) |
-| Purchased from a dealer (not private party) | ⚠️ Needs confirmation |
-| Sale price ≤ $25,000 | ⚠️ **CRITICAL** — must confirm used sale price |
+| Purchased from a dealer | ✅ Yes (Mike Ficken Ford, Charlotte) |
+| Sale price ≤ $25,000 | ❌ **$36,000 — exceeds cap** |
 | Battery capacity ≥ 7,000 kWh | ✅ Yes (98 kWh battery) |
-| VIN on IRS Qualified List | ⚠️ Must check IRS list |
+| VIN on IRS Qualified List | N/A — already disqualified by price |
 
-#### 2. Used Vehicle MSRP/Sale Price Cap
-| Used Vehicle Sale Price | Eligibility |
-|------------------------|-------------|
-| ≤ $25,000 | ✅ Eligible |
-| > $25,000 | ❌ Not eligible |
+**Result: $0 credit. The $25,000 sale price cap is a hard limit.**
 
-**⚠️ The Platinum trim originally sold for ~$90,000+. Even as a used vehicle, if the sale price exceeded $25,000, it does NOT qualify.**
+#### 2. New Vehicle Credit (IRC 30D) — NOT ELIGIBLE
+- Ford's credit phase-out ended Dec 31, 2022
+- This is a used vehicle anyway (IRC 30D is for new vehicles only)
 
-#### 3. Used Vehicle Credit Details
-| Detail | Amount |
-|--------|--------|
-| Credit percentage | 30% of qualifying amount |
-| Maximum credit | **$4,000** |
-| Credit claimed by seller | Must not have been claimed by previous owner |
-
-#### 4. Used Vehicle Income Limits (stricter than new)
-| Filing Status | Income Limit |
-|--------------|-------------|
-| Married Filing Jointly | $250,000 |
-| Head of Household | $200,000 |
-| Single / MFS | $125,000 |
-
-#### 5. Which Form?
-- **Form 8936** — Used clean vehicle credit (Part III)
-- **Dealer's Form 8910 copy** — Must have from dealer at time of sale
-
-#### 6. State Credit (North Carolina)
+#### 3. State Credit (North Carolina)
 - NC does **not** currently offer a state-level EV tax credit
 - Some utilities may offer rebate programs (check with your provider)
-
-### Critical Questions
-1. **What was the used sale price?** If > $25,000 → $0 credit
-2. **Was it purchased from a dealer?** Private party sales don't qualify
-3. **Is the VIN on the IRS qualified used vehicle list?** Must be on the list
-4. **Was the credit already claimed by the previous owner?** Can't be double-claimed
 
 ### Related Forms
 | Form | Purpose |
 |------|---------|
-| Form 8936 (Part III) | Used clean vehicle credit calculation |
-| Form 1040, line 53 | Credit amount flows here |
-| Dealer Form 8910 | Proof of credit eligibility (from dealer) |
+| None | No EV credit to claim |
 
 ---
 
