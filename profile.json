@@ -1,0 +1,259 @@
+{
+  "profile_version": "1.0",
+  "last_updated": "2026-06-30",
+  "taxpayer": {
+    "first_name": "Kevin",
+    "middle_initial": "M",
+    "last_name": "Moker",
+    "ssn": "XXX-XX-XXXX",
+    "date_of_birth": "",
+    "email": "",
+    "phone": ""
+  },
+  "spouse": {
+    "first_name": "Josephine",
+    "middle_initial": "",
+    "last_name": "Moker",
+    "ssn": "XXX-XX-XXXX",
+    "date_of_birth": "",
+    "has_income": true,
+    "employer": ""
+  },
+  "filing_status": {
+    "status": "married_joint",
+    "description": "Married Filing Jointly",
+    "qualifying_surviving_spouse": false,
+    "head_of_household": false
+  },
+  "dependents": [
+    {
+      "first_name": "",
+      "last_name": "",
+      "ssn": "",
+      "date_of_birth": "",
+      "relationship": "",
+      "age": 0,
+      "qualifies_for_ctc": false,
+      "qualifies_for_cdcc": false,
+      "full_time_student": false,
+      "permanently_disabled": false
+    }
+  ],
+  "address": {
+    "street": "",
+    "apt": "",
+    "city": "",
+    "state": "NC",
+    "zip": ""
+  },
+  "income_sources": {
+    "wages": {
+      "has_w2": false,
+      "employers": []
+    },
+    "self_employment": {
+      "has_schedule_c": false,
+      "businesses": [],
+      "note": "User states no self-employment, but PDF analysis shows Schedule C with consulting income"
+    },
+    "investments": {
+      "has_1099_int": false,
+      "has_1099_div": false,
+      "has_1099_b": false,
+      "brokerages": []
+    },
+    "retirement": {
+      "has_1099_r": false,
+      "distributions": []
+    },
+    "other": {
+      "description": "",
+      "amount": 0
+    }
+  },
+  "deductions": {
+    "standard": false,
+    "itemized": false,
+    "itemized_breakdown": {
+      "medical": 0,
+      "interest": {
+        "mortgage": 0,
+        "investment": 0
+      },
+      "taxes": {
+        "state_income": 0,
+        "real_estate": 0,
+        "personal_property": 0
+      },
+      "charitable": {
+        "cash": 0,
+        "non_cash": 0
+      },
+      "other": 0
+    }
+  },
+  "credits": {
+    "child_tax_credit": {
+      "eligible": false,
+      "amount": 0,
+      "children_count": 0
+    },
+    "credit_for_other_dependents": {
+      "eligible": false,
+      "amount": 0,
+      "dependents_count": 0
+    },
+    "earned_income_credit": {
+      "eligible": false,
+      "amount": 0
+    },
+    "education": {
+      "american_opportunity": {
+        "eligible": false,
+        "amount": 0
+      },
+      "lifetime_learning": {
+        "eligible": false,
+        "amount": 0
+      }
+    },
+    "retirement": {
+      "saver_credit": {
+        "eligible": false,
+        "amount": 0
+      }
+    },
+    "clean_vehicle": {
+      "new_vehicle": {
+        "eligible": false,
+        "amount": 0,
+        "vehicle_info": {
+          "make": "",
+          "model": "",
+          "year": 0,
+          "vin": "",
+          "purchase_date": "",
+          "price": 0,
+          "battery_capacity_kwh": 0
+        }
+      },
+      "used_vehicle": {
+        "eligible": false,
+        "amount": 0,
+        "vehicle_info": {
+          "make": "",
+          "model": "",
+          "year": 0,
+          "vin": "",
+          "purchase_date": "",
+          "price": 0
+        }
+      }
+    },
+    "adoption": {
+      "eligible": false,
+      "amount": 0,
+      "expenses": 0,
+      "adoptee_info": {
+        "name": "",
+        "ssn": "",
+        "dob": ""
+      }
+    },
+    "clean_energy": {
+      "residential": {
+        "solar": 0,
+        "wind": 0,
+        "geothermal": 0,
+        "battery": 0
+      }
+    },
+    "other": []
+  },
+  "tax_favored_accounts": {
+    "hsa": {
+      "has_account": false,
+      "contributions": 0,
+      "distributions": 0,
+      "account_holder": ""
+    },
+    "ira": {
+      "traditional": {
+        "has_account": false,
+        "contributions": 0,
+        "nondeductible": 0,
+        "distributions": 0
+      },
+      "roth": {
+        "has_account": false,
+        "contributions": 0,
+        "distributions": 0
+      }
+    },
+    "529": {
+      "has_account": false,
+      "beneficiary": "",
+      "distributions": 0
+    },
+    "fsa": {
+      "has_account": false,
+      "contributions": 0,
+      "reimbursements": 0
+    }
+  },
+  "property": {
+    "home": {
+      "mortgage_interest": 0,
+      "points_paid": 0,
+      "mortgage_balance": 0,
+      "acquisition_date": "",
+      "purchase_price": 0
+    },
+    "real_estate_taxes": 0,
+    "personal_property_taxes": 0,
+    "depreciation": {
+      "section_179": 0,
+      "bonus_depreciation": 0,
+      "assets": []
+    }
+  },
+  "foreign": {
+    "foreign_accounts": false,
+    "foreign_income": false,
+    "foreign_elected": false,
+    "form_3520_required": false,
+    "form_8938_required": false,
+    "form_8621_required": false,
+    "ftb_required": false,
+    "housing_exclusion": 0,
+    "housing_deduction": 0
+  },
+  "payments": {
+    "federal_withheld": 0,
+    "state_withheld": 0,
+    "estimated_payments": 0,
+    "overpayment_applied": 0,
+    "refund": {
+      "direct_deposit": false,
+      "routing_number": "",
+      "account_number": "",
+      "account_type": "",
+      "mail_check": true
+    }
+  },
+  "preferences": {
+    "filing_method": "e-file",
+    "refund_method": "direct_deposit",
+    "tax_pro": false,
+    "prepared_by": "",
+    "signature_pin": "",
+    "date_signed": ""
+  },
+  "notes": {
+    "2025_k12": "Need to verify Schedule C status - PDFs show consulting income but user says no self-employment",
+    "2025_ev": "Need to verify 2021 Ford F150 Lightning EV credit eligibility",
+    "2025_adoption": "Form 9325 found in PDFs - need to verify adoption credit status",
+    "2025_foreign": "Form 8938 and Form 3520 found in PDFs - foreign financial interests",
+    "2025_nc": "North Carolina state return needed"
+  }
+}

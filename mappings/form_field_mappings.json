@@ -1,0 +1,430 @@
+{
+  "1040": {
+    "form_name": "U.S. Individual Income Tax Return",
+    "tax_year": 2025,
+    "sections": {
+      "filing_status": {
+        "fields": [
+          {"line": "1", "label": "Single / Married Filing Jointly / Head of Household / Qualifying Surviving Spouse / Married Filing Separately", "type": "select", "required": true},
+          {"line": "2", "label": "Spouse's name (if filing jointly)", "type": "text", "required": false},
+          {"line": "3", "label": "SSN", "type": "ssn", "required": false}
+        ],
+        "instructions": "Choose your filing status. This affects your tax rate and standard deduction."
+      },
+      "dependents": {
+        "fields": [
+          {"line": "6a-6d", "label": "Dependent first name", "type": "text", "required": false},
+          {"line": "6a-6d", "label": "Dependent last name", "type": "text", "required": false},
+          {"line": "6a-6d", "label": "Dependent SSN", "type": "ssn", "required": false},
+          {"line": "6a-6d", "label": "Dependent relationship", "type": "select", "required": false},
+          {"line": "6a-6d", "label": "Dependent qualifies for Child Tax Credit", "type": "checkbox", "required": false},
+          {"line": "6a-6d", "label": "Dependent qualifies for Credit for Other Dependents", "type": "checkbox", "required": false}
+        ],
+        "instructions": "List all dependents who lived with you for more than half the year."
+      },
+      "income": {
+        "fields": [
+          {"line": "1a-1z", "label": "Wages, salaries, tips (from W-2)", "type": "currency", "required": false},
+          {"line": "2a-2b", "label": "Taxable interest", "type": "currency", "required": false},
+          {"line": "3a-3b", "label": "Qualified dividends", "type": "currency", "required": false},
+          {"line": "4a-4b", "label": "Capital gain or loss", "type": "currency", "required": false},
+          {"line": "5a-5b", "label": "Capital gain distribution", "type": "currency", "required": false},
+          {"line": "6-8", "label": "Other income", "type": "currency", "required": false},
+          {"line": "9", "label": "Total income", "type": "currency", "required": true}
+        ],
+        "instructions": "Report all income from W-2s, 1099s, and other sources."
+      },
+      "adjustments": {
+        "fields": [
+          {"line": "11-24z", "label": "Adjustments to income (IRA deduction, student loan interest, etc.)", "type": "currency", "required": false}
+        ],
+        "instructions": "List deductible expenses that reduce your taxable income."
+      },
+      "tax": {
+        "fields": [
+          {"line": "15", "label": "Tax (from tax tables or rate schedules)", "type": "currency", "required": true},
+          {"line": "16", "label": "Additional tax (AMT, etc.)", "type": "currency", "required": false},
+          {"line": "17", "label": "Total tax", "type": "currency", "required": true}
+        ],
+        "instructions": "Calculated based on your taxable income and filing status."
+      },
+      "payments": {
+        "fields": [
+          {"line": "24-28", "label": "Federal income tax withheld (from W-2s and 1099s)", "type": "currency", "required": false},
+          {"line": "25", "label": "2024 estimated tax payments", "type": "currency", "required": false},
+          {"line": "27", "label": "Earned income credit", "type": "currency", "required": false},
+          {"line": "28", "label": "Additional child tax credit", "type": "currency", "required": false},
+          {"line": "30", "label": "Total payments", "type": "currency", "required": true}
+        ],
+        "instructions": "Sum of all taxes already paid through withholding and estimated payments."
+      },
+      "refund_owed": {
+        "fields": [
+          {"line": "31", "label": "Amount you overpaid", "type": "currency", "required": false},
+          {"line": "32", "label": "Amount you owe", "type": "currency", "required": false},
+          {"line": "33", "label": "Refund", "type": "currency", "required": false},
+          {"line": "34", "label": "Refund applied to 2025 estimated tax", "type": "currency", "required": false},
+          {"line": "35", "label": "Total paid", "type": "currency", "required": false}
+        ],
+        "instructions": "If overpaid, you get a refund. If underpaid, you owe the difference."
+      }
+    }
+  },
+  "schedule_1": {
+    "form_name": "Schedule 1 (Form 1040) - Additional Income and Adjustments",
+    "tax_year": 2025,
+    "sections": {
+      "part_i_additional_income": {
+        "fields": [
+          {"line": "1", "label": "Taxable refunds (state/local income tax)", "type": "currency", "required": false},
+          {"line": "2", "label": "Taxable grants", "type": "currency", "required": false},
+          {"line": "3", "label": "Alien status change", "type": "text", "required": false},
+          {"line": "8", "label": "Housing exclusion/deduction (Form 2555)", "type": "currency", "required": false},
+          {"line": "9", "label": "Jury pay (with offset to employer)", "type": "currency", "required": false},
+          {"line": "10", "label": "Other income (describe)", "type": "text", "required": false}
+        ],
+        "instructions": "Report income not included on lines 1-9 of Form 1040."
+      },
+      "part_ii_adjustments": {
+        "fields": [
+          {"line": "12", "label": "Educator expenses", "type": "currency", "required": false},
+          {"line": "13", "label": "IRA deduction", "type": "currency", "required": false},
+          {"line": "14", "label": "Student loan interest", "type": "currency", "required": false},
+          {"line": "15", "label": "Self-employment tax", "type": "currency", "required": false},
+          {"line": "16", "label": "Self-employed SEP/SIMPLE/qualified plan", "type": "currency", "required": false},
+          {"line": "17", "label": "Self-employed health insurance", "type": "currency", "required": false},
+          {"line": "18", "label": "Penalty on early withdrawal", "type": "currency", "required": false},
+          {"line": "20", "label": "Health savings account deduction (Form 8889)", "type": "currency", "required": false},
+          {"line": "21", "label": "Tuition and fees (deprecated)", "type": "currency", "required": false},
+          {"line": "24z", "label": "Total adjustments", "type": "currency", "required": true}
+        ],
+        "instructions": "Deductions that reduce your adjusted gross income (AGI)."
+      }
+    }
+  },
+  "schedule_a": {
+    "form_name": "Schedule A (Form 1040) - Itemized Deductions",
+    "tax_year": 2025,
+    "sections": {
+      "part_i_medical": {
+        "fields": [
+          {"line": "1", "label": "Medical expenses paid", "type": "currency", "required": false},
+          {"line": "2a", "label": "Form 1040 line 11 (AGI)", "type": "currency", "required": false},
+          {"line": "2b", "label": "7.5% of AGI", "type": "currency", "required": true},
+          {"line": "3", "label": "Subtract line 2b from line 1", "type": "currency", "required": true}
+        ],
+        "instructions": "Deduct medical expenses exceeding 7.5% of your AGI."
+      },
+      "part_ii_interest": {
+        "fields": [
+          {"line": "5a", "label": "Home mortgage interest (bank)", "type": "currency", "required": false},
+          {"line": "5b", "label": "Home mortgage interest (points)", "type": "currency", "required": false},
+          {"line": "5c", "label": "Mortgage insurance premiums", "type": "currency", "required": false},
+          {"line": "6", "label": "Investment interest", "type": "currency", "required": false},
+          {"line": "7", "label": "Total interest", "type": "currency", "required": true}
+        ],
+        "instructions": "Deduct home mortgage interest, points, and investment interest."
+      },
+      "part_iii_taxes": {
+        "fields": [
+          {"line": "8", "label": "State and local income taxes", "type": "currency", "required": false},
+          {"line": "9", "label": "Real estate taxes", "type": "currency", "required": false},
+          {"line": "10", "label": "Personal property taxes", "type": "currency", "required": false},
+          {"line": "11", "label": "Total SALT (capped at $10,000)", "type": "currency", "required": true}
+        ],
+        "instructions": "State and local taxes are capped at $10,000 combined."
+      },
+      "part_iv_charitable": {
+        "fields": [
+          {"line": "13", "label": "Cash contributions", "type": "currency", "required": false},
+          {"line": "14", "label": "Non-cash contributions", "type": "currency", "required": false},
+          {"line": "15", "label": "Other charitable contributions", "type": "currency", "required": false},
+          {"line": "16", "label": "Total charitable contributions", "type": "currency", "required": true}
+        ],
+        "instructions": "Deduct charitable donations to qualified organizations."
+      },
+      "part_v_other": {
+        "fields": [
+          {"line": "17", "label": "Total itemized deductions", "type": "currency", "required": true}
+        ],
+        "instructions": "Compare to your standard deduction. Itemize if this total is higher."
+      }
+    }
+  },
+  "schedule_c": {
+    "form_name": "Schedule C (Form 1040) - Profit or Loss from Business",
+    "tax_year": 2025,
+    "sections": {
+      "part_i_business_info": {
+        "fields": [
+          {"line": "a", "label": "Business name", "type": "text", "required": false},
+          {"line": "b", "label": "DBA/Trade name", "type": "text", "required": false},
+          {"line": "c", "label": "Business address/ZIP", "type": "text", "required": false},
+          {"line": "d", "label": "Principal business/profession", "type": "text", "required": false},
+          {"line": "e", "label": "Business code (NAICS)", "type": "text", "required": false},
+          {"line": "f", "label": "Entry type (Sole Prop / Single-member LLC)", "type": "select", "required": false},
+          {"line": "g", "label": " EIN", "type": "text", "required": false},
+          {"line": "h", "label": "SSN", "type": "ssn", "required": false}
+        ],
+        "instructions": "Identify your business and its structure."
+      },
+      "part_ii_income": {
+        "fields": [
+          {"line": "1", "label": "Gross receipts/sales", "type": "currency", "required": true},
+          {"line": "2", "label": "Returns and allowances", "type": "currency", "required": false},
+          {"line": "3", "label": "Cost of goods sold", "type": "currency", "required": false},
+          {"line": "4", "label": "Gross profit", "type": "currency", "required": true}
+        ],
+        "instructions": "Report your business income and cost of goods sold."
+      },
+      "part_iii_expenses": {
+        "fields": [
+          {"line": "5a", "label": "Advertising", "type": "currency", "required": false},
+          {"line": "6", "label": "Car/truck expenses (or mileage)", "type": "currency", "required": false},
+          {"line": "7", "label": "Commissions and fees", "type": "currency", "required": false},
+          {"line": "8", "label": "Contract work (subcontractors)", "type": "currency", "required": false},
+          {"line": "9", "label": "Depletion", "type": "currency", "required": false},
+          {"line": "10", "label": "Depreciation and section 179", "type": "currency", "required": false},
+          {"line": "11", "label": "Employee benefit programs", "type": "currency", "required": false},
+          {"line": "12", "label": "Insurance (other than health)", "type": "currency", "required": false},
+          {"line": "13", "label": "Interest", "type": "currency", "required": false},
+          {"line": "14", "label": "Lobbying", "type": "currency", "required": false},
+          {"line": "15", "label": "Legal and professional services", "type": "currency", "required": false},
+          {"line": "16", "label": "Office expense", "type": "currency", "required": false},
+          {"line": "17", "label": "Pension and profit-sharing plans", "type": "currency", "required": false},
+          {"line": "18a", "label": "Rent/lease (vehicles)", "type": "currency", "required": false},
+          {"line": "18b", "label": "Rent/lease ( machinery/equipment)", "type": "currency", "required": false},
+          {"line": "18c", "label": "Rent/lease ( other property)", "type": "currency", "required": false},
+          {"line": "19", "label": "Repairs and maintenance", "type": "currency", "required": false},
+          {"line": "20", "label": "Supplies", "type": "currency", "required": false},
+          {"line": "21", "label": "Taxes and licenses", "type": "currency", "required": false},
+          {"line": "22", "label": "Travel", "type": "currency", "required": false},
+          {"line": "23a", "label": "Utilities", "type": "currency", "required": false},
+          {"line": "24", "label": "Wages (less employment credits)", "type": "currency", "required": false},
+          {"line": "25", "label": "Other expenses", "type": "currency", "required": false},
+          {"line": "26", "label": "Total expenses", "type": "currency", "required": true}
+        ],
+        "instructions": "List all ordinary and necessary business expenses."
+      },
+      "part_iv_net_profit": {
+        "fields": [
+          {"line": "31", "label": "Gross profit", "type": "currency", "required": true},
+          {"line": "32", "label": "Other income (from Sch 1)", "type": "currency", "required": false},
+          {"line": "33", "label": "Gross income", "type": "currency", "required": true},
+          {"line": "34", "label": "Net profit or (loss)", "type": "currency", "required": true}
+        ],
+        "instructions": "This amount flows to Schedule 1, line 3, and Form 1040."
+      }
+    }
+  },
+  "schedule_d": {
+    "form_name": "Schedule D (Form 1040) - Capital Gains and Losses",
+    "tax_year": 2025,
+    "sections": {
+      "part_i_short_term": {
+        "fields": [
+          {"line": "1", "label": "Short-term gains from Form 8949", "type": "currency", "required": false},
+          {"line": "2", "label": "Collection >1 year (non-broker)", "type": "currency", "required": false}
+        ],
+        "instructions": "Report short-term capital gains and losses."
+      },
+      "part_ii_long_term": {
+        "fields": [
+          {"line": "8", "label": "Long-term gains from Form 8949", "type": "currency", "required": false},
+          {"line": "9", "label": "Collection >1 year (non-broker)", "type": "currency", "required": false},
+          {"line": "10", "label": "Other long-term gains", "type": "currency", "required": false}
+        ],
+        "instructions": "Report long-term capital gains and losses."
+      },
+      "part_iii_summary": {
+        "fields": [
+          {"line": "16", "label": "Net capital gain or (loss)", "type": "currency", "required": true}
+        ],
+        "instructions": "Combines short-term and long-term gains/losses."
+      }
+    }
+  },
+  "schedule_se": {
+    "form_name": "Schedule SE (Form 1040) - Self-Employment Tax",
+    "tax_year": 2025,
+    "sections": {
+      "part_i": {
+        "fields": [
+          {"line": "1", "label": "Net farm profit (from Schedule F)", "type": "currency", "required": false},
+          {"line": "2", "label": "Net business profit (from Schedule C)", "type": "currency", "required": false},
+          {"line": "3", "label": "Combination of lines 1 and 2", "type": "currency", "required": false},
+          {"line": "4a", "label": "Tractor/vehicle election (50%)", "type": "checkbox", "required": false},
+          {"line": "5a", "label": "STI election (87.5%)", "type": "checkbox", "required": false},
+          {"line": "6", "label": "Total self-employment income", "type": "currency", "required": true},
+          {"line": "8", "label": "Self-employment tax", "type": "currency", "required": true}
+        ],
+        "instructions": "Calculate Social Security and Medicare tax for self-employed income."
+      }
+    }
+  },
+  "8867": {
+    "form_name": "Form 8867 - Paid Preparer's Earned Income Credit Checklist",
+    "tax_year": 2025,
+    "sections": {
+      "part_i_qualification": {
+        "fields": [
+          {"label": "EIC qualification checklist items", "type": "checkbox", "required": true}
+        ],
+        "instructions": "Preparer must complete this checklist before claiming EIC."
+      }
+    }
+  },
+  "8879": {
+    "form_name": "Form 8879 - OAuth/PEP Authorization for e-file",
+    "tax_year": 2025,
+    "sections": {
+      "authorization": {
+        "fields": [
+          {"label": "Signature", "type": "text", "required": true},
+          {"label": "Date", "type": "date", "required": true},
+          {"label": "PIN", "type": "text", "required": true}
+        ],
+        "instructions": "Authorize electronic filing of your tax return."
+      }
+    }
+  },
+  "8936": {
+    "form_name": "Form 8936 - Qualified Plug-in Electric and Plug-in Electric Vehicle Credit",
+    "tax_year": 2025,
+    "sections": {
+      "part_i_new_clean_vehicles": {
+        "fields": [
+          {"label": "Vehicle make and model", "type": "text", "required": true},
+          {"label": "Vehicle Identification Number (VIN)", "type": "text", "required": true},
+          {"label": "Date placed in service", "type": "date", "required": true},
+          {"label": "Battery capacity (kWh)", "type": "number", "required": true},
+          {"label": "Purchase price", "type": "currency", "required": true},
+          {"label": "MSRP limit check", "type": "checkbox", "required": true},
+          {"label": "Income limit check", "type": "checkbox", "required": true},
+          {"label": "Credit amount", "type": "currency", "required": true}
+        ],
+        "instructions": "For new clean vehicles: up to $7,500 credit. Must meet battery component and critical mineral requirements."
+      },
+      "part_ii_new_clean_vehicles_30d": {
+        "fields": [
+          {"label": "Vehicle qualifying under IRC 30D", "type": "checkbox", "required": true},
+          {"label": "Retail price limit (cars: $55,000; SUVs/vans/trucks: $80,000)", "type": "checkbox", "required": true}
+        ],
+        "instructions": "IRC 30D credit for new clean vehicles purchased from a dealer."
+      },
+      "part_iii_used_clean_vehicles": {
+        "fields": [
+          {"label": "Used vehicle year", "type": "number", "required": true},
+          {"label": "Sale price", "type": "currency", "required": true},
+          {"label": "Credit amount (up to $4,000)", "type": "currency", "required": true}
+        ],
+        "instructions": "For used clean vehicles: up to $4,000 credit. Vehicle must be 2+ years old."
+      }
+    }
+  },
+  "8812": {
+    "form_name": "Schedule 8812 (Form 1040) - Credits for Child and Dependents",
+    "tax_year": 2025,
+    "sections": {
+      "part_i_child_tax_credit": {
+        "fields": [
+          {"label": "Number of qualifying children under age 17", "type": "number", "required": true},
+          {"label": "Child Tax Credit amount ($2,000 per child)", "type": "currency", "required": true},
+          {"label": "Number of other dependents", "type": "number", "required": true},
+          {"label": "Credit for Other Dependents ($500 per dependent)", "type": "currency", "required": true}
+        ],
+        "instructions": "Child Tax Credit: up to $2,000 per qualifying child under 17. Credit for Other Dependents: $500 for dependents who don't qualify for CTC."
+      }
+    }
+  },
+  "4562": {
+    "form_name": "Form 4562 - Depreciation and Amortization",
+    "tax_year": 2025,
+    "sections": {
+      "part_i_section_179": {
+        "fields": [
+          {"label": "Section 179 expense", "type": "currency", "required": false},
+          {"label": "Maximum Section 179 deduction", "type": "currency", "required": true},
+          {"label": "Taxable income limitation", "type": "currency", "required": false}
+        ],
+        "instructions": "Deduct the cost of qualifying property in the year placed in service."
+      },
+      "part_ii_special_depreciation": {
+        "fields": [
+          {"label": "Special depreciation allowance (bonus depreciation)", "type": "currency", "required": false}
+        ],
+        "instructions": "100% bonus depreciation for qualifying property (phasing down in 2025)."
+      }
+    }
+  },
+  "5329": {
+    "form_name": "Form 5329 - Additional Taxes on Qualified Plans",
+    "tax_year": 2025,
+    "sections": {
+      "ira_early_distribution": {
+        "fields": [
+          {"label": "IRA distributions before age 59.5", "type": "currency", "required": false},
+          {"label": "Exceptions to early withdrawal penalty", "type": "checkbox", "required": false}
+        ],
+        "instructions": "10% penalty on early IRA distributions unless an exception applies."
+      },
+      "hsa_early_distribution": {
+        "fields": [
+          {"label": "HSA distributions for non-qualified expenses", "type": "currency", "required": false}
+        ],
+        "instructions": "20% penalty on HSA distributions for non-qualified medical expenses."
+      }
+    }
+  },
+  "8606": {
+    "form_name": "Form 8606 - Nondeductible IRAs",
+    "tax_year": 2025,
+    "sections": {
+      "part_i_nondeductible_contributions": {
+        "fields": [
+          {"label": "Nondeductible contributions to traditional IRA", "type": "currency", "required": false},
+          {"label": "Total basis in traditional IRA", "type": "currency", "required": false}
+        ],
+        "instructions": "Track basis in nondeductible IRA contributions."
+      },
+      "part_ii_traditional_ira_distributions": {
+        "fields": [
+          {"label": "Traditional IRA distributions", "type": "currency", "required": false},
+          {"label": "Taxable amount", "type": "currency", "required": false}
+        ],
+        "instructions": "Calculate taxable portion of IRA distributions using pro-rata rule."
+      }
+    }
+  },
+  "8889": {
+    "form_name": "Form 8889 - Health Savings Accounts (HSAs)",
+    "tax_year": 2025,
+    "sections": {
+      "part_i_contributions": {
+        "fields": [
+          {"label": "HSA contributions made", "type": "currency", "required": false},
+          {"label": "Self-employed health insurance deduction", "type": "currency", "required": false},
+          {"label": "2025 contribution limit (self-only)", "type": "currency", "required": true},
+          {"label": "2025 contribution limit (family)", "type": "currency", "required": true}
+        ],
+        "instructions": "Report HSA contributions and calculate deductible amount."
+      }
+    }
+  },
+  "9325": {
+    "form_name": "Form 9325 - Transfer Information for Qualified Adoption Expenses",
+    "tax_year": 2025,
+    "sections": {
+      "adoption_info": {
+        "fields": [
+          {"label": "Adoptee's name", "type": "text", "required": false},
+          {"label": "Adoptee's SSN", "type": "ssn", "required": false},
+          {"label": "Adoptee's date of birth", "type": "date", "required": false},
+          {"label": "Adoptee's relationship to taxpayer", "type": "text", "required": false},
+          {"label": "Qualified adoption expenses", "type": "currency", "required": false}
+        ],
+        "instructions": "Report adoption-related expenses and information for adoption credit."
+      }
+    }
+  }
+}
